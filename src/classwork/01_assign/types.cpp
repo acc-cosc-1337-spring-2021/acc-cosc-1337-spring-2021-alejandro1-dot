@@ -16,9 +16,9 @@ int sum_numbers(int num1, int num2)
 //	return num1 * num2;
 //}
 
-int multiply_number(int num1)
+int multiply_number(int firstNumber, int secondNumber)
 {
-	return num1 * 5;
+	return firstNumber * secondNumber;
 }
 
 

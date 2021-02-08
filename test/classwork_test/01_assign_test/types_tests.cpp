@@ -16,5 +16,5 @@ TEST_CASE("Test sum_numbers function")
 
 TEST_CASE("Test multiply_number function", "verification")
 {
-	REQUIRE(multiply_number(10) == 50);
+	REQUIRE(multiply_number(10, 5) == 50)
 }

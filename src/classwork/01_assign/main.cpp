@@ -6,15 +6,24 @@
 
 int main() 
 {
+	//Blank int variable
 	int num1;
+	//User Input
+	std::cout<<"Enter your first number: ";
+	//User Input Stored for num1
 	std::cin >> num1;
 
-	int multiply_number(num1);
-	{
-		return num1
-	}
+	int num;
+	std::cout<<"Multiply by: ";
+	std::cin >> num;
 
-	int second_Number = 4;
-	return	multiply_number(num1) * second_Number
+
+	//One Parameter Keyboard Input Function
+	int endResult = multiply_number(num1, num);
+	
+	std::cout<<"Your total number is: "<< endResult;
+	
+	//End
+	return 0;
 }
 
