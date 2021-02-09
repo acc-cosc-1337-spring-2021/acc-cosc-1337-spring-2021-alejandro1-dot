@@ -10,12 +10,12 @@ int sum_numbers(int num1, int num2)
 
 // Takes in one Parameter FUnction
 
-//int multiply_number(int num1)
-//{
-//	int num2 = 5;
-//	return num1 * num2;
-//}
+int multiply_number_homework(int firstNumber)
+{
+	return firstNumber;
+}
 
+// Takes in Two Parameters Function
 int multiply_number(int firstNumber, int secondNumber)
 {
 	return firstNumber * secondNumber;

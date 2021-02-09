@@ -1,8 +1,8 @@
 //Write the include statement for types.h here
-#include "types.h"
+
 //Write include for capturing input from keyboard and displaying output to screen
 #include <iostream>
-
+#include "types.h"
 
 int main() 
 {
@@ -12,15 +12,18 @@ int main()
 	std::cout<<"Enter your first number: ";
 	//User Input Stored for num1
 	std::cin >> num1;
-
-	int num;
-	std::cout<<"Multiply by: ";
-	std::cin >> num;
-
-
-	//One Parameter Keyboard Input Function
-	int endResult = multiply_number(num1, num);
 	
+	//Function assignment for num1
+	int number1_input = multiply_number_homework(num1);
+
+	//Value 2
+	int num = 4;
+
+
+	//One Parameter Keyboard Input Function x Value 2 (num)
+	int endResult = number1_input * num;
+
+	//Total amount
 	std::cout<<"Your total number is: "<< endResult;
 	
 	//End
