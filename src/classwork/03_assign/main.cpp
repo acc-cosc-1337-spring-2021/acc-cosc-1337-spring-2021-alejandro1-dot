@@ -32,6 +32,8 @@ int main()
 	std::cout<<"Type '1' for If statement or '2' for Switch statement: ";
 	std::cin>>case_change;
 	
+	
+	
 	//If not 1 or 2
 	while(case_change != 1 && case_change != 2)
 	{
@@ -39,6 +41,7 @@ int main()
 		std::cout<<"Type '1' for If statement or '2' for Switch statement: ";
 		std::cin>>case_change;
 	}
+	
 	//Using IF
 	if (case_change == 1)
 	{
