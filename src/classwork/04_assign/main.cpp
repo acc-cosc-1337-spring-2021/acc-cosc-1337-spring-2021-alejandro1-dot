@@ -24,7 +24,7 @@ int main()
 		cin>>keyboard_number;
 
 		//If number entered is a negative number
-		if(keyboard_number < 0)
+		if(keyboard_number <= 0)
 		{
 			cout<<"\nwe cant accumulate negative numbers"<<"\npress 1 to try again or press any button to quit: ";
 			//Will ask the user if they want to stop the loop
