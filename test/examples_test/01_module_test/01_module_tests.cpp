@@ -7,6 +7,7 @@
 #include<string>
 #include "numbers.h"
 #include "auto.h"
+#include "chars.h"
 
 
 TEST_CASE("Verify Test Configuration", "verification") 
@@ -40,7 +41,7 @@ TEST_CASE("Verify echo variable function", "returns a single digit")
 
 /*test case add_to_double_2 with 1 as parameter*/
 
-TEST_CASE("Verify echo variable function", "returns a single digit")
+TEST_CASE("Verify echo variable function", "returns 10")
 {
 	REQUIRE(add_to_Double() == 10);
 }
@@ -49,3 +50,9 @@ TEST_CASE("Verify echo variable function", "returns a single digit")
 
 /*test case string test ASCII values Joe characters are equal to 74, 111, and 101*/
 
+TEST_CASE("Verify echo variable function", "returns a ascii value")
+{
+	REQUIRE(get_char_ascii("J") == 74);
+	REQUIRE(get_char_ascii("o") == 111);
+	REQUIRE(get_char_ascii("e") == 102);
+}
