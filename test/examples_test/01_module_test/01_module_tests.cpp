@@ -5,6 +5,8 @@
 //Module 02
 #include "vars.h"
 #include<string>
+#include "numbers.h"
+#include "auto.h"
 
 
 TEST_CASE("Verify Test Configuration", "verification") 
@@ -27,11 +29,21 @@ TEST_CASE("Verify echo variable function", "returns a single digit")
 
 /*test case add_to_double_1 with 0 as parameter*/
 
+TEST_CASE("Verify echo variable function", "returns a single digit")
+{
+	REQUIRE(add_to_Double(1) == 1.9);
+}
+
 /*test case add_to_double_1 with 1 as parameter*/
 
 /*test case add_to_double_2 with 0 as parameter*/
 
 /*test case add_to_double_2 with 1 as parameter*/
+
+TEST_CASE("Verify echo variable function", "returns a single digit")
+{
+	REQUIRE(add_to_Double() == 10);
+}
 
 /*test case char test ASCII values */
 
