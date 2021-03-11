@@ -10,7 +10,7 @@ int sum_of_squares(int num)
 
     while(index <= num)
     {
-        sum = sum + index;
+        sum = sum + index * index  ;
         index++; //index = index + 1
 
         //index--; == index = index -1  
@@ -24,11 +24,22 @@ int sum_of_squares(int num)
 /*
 result:
 
-H
-e
-l
-l
-0
+0-H
+1-e
+2-l
+3-l
+4-0
 
 */
 
+void display(std::string str)
+{
+    auto index = 0;
+
+    while (index < str.length())
+    {
+        
+        std::cout<<str[]<<"\n"
+        index++;
+    }
+}
