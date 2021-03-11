@@ -32,7 +32,7 @@ bool is_not_in_range_1_to_10(int num) //and
 
 // TEsting Numbers less than 1 and greater than 10
 
-bool is_not_in_range_1_to_10_OR(int num);
+bool is_not_in_range_1_to_10_OR(int num)
 {
     return num < 1 || num > 10;
 }
