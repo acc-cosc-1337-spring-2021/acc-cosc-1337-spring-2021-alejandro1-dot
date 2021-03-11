@@ -9,3 +9,26 @@
 //returns 'Option 4' when value 4
 //return 'Invalid Option' otherwise
 
+
+std::string name_with_num_param(int num)
+{
+    std::string option;
+
+    switch (num)
+    {
+    case 1:
+        option = "Option 1"
+        break;
+    case 2:
+        option = "Option 2"
+        break;
+    case 3:
+        option = "Option 3"
+        break;
+    
+    default:
+        option = "Invalid option"
+        break;
+    }
+    return option;
+}
