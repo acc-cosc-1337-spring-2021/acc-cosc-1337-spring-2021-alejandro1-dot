@@ -3,6 +3,8 @@
 //This helps locate the file easier
 #include "../src/examples/02_module/01_expressions/expressions.h"
 #include "casting.h"
+#include "overflow.h"
+#include <climits>
 
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
@@ -38,8 +40,18 @@ TEST_CASE("Verify Test stati_cast_double_int", "double will round to int" )
 	REQUIRE(static_cast_double_int(3.6) == 3);
 }
 /*Test int overflow to show adding 1 to 2147483647 returns -2147483648*/
-
+TEST_CASE("Verify Test overflow", "return C++ weirdness" ) 
+{
+	REQUIRE(overflow() == 2147483647);
+}
 /*Test get radius of a circle with 10 to show that it returns 314.159*/
+
+TEST_CASE("Verify Test underflow", "return C++ weirdness with zero" ) 
+{
+	//REQUIRE(under_flow() == .1);
+	//REQUIRE(under_flow() == __DBL_MIN__);
+	REQUIRE(under_flow() == 0);
+}
 
 /*Test int data size */
 
