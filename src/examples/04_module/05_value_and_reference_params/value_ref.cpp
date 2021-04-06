@@ -10,7 +10,12 @@ The function assigns 20 to num1 and 50 to num2
 
 @return does not return a value
 */
+void pass_by_val_and_ref(int value)
+{
+    auto num1 = 1;
 
+    value = num1;
+}
 
 
 /*

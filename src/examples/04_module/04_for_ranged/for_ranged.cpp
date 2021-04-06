@@ -46,5 +46,10 @@ void  loop_string_w_for_range(std::string str)
     for(auto s: str)
     {
         cout<<s<"\n";
+
+        s = "z";
     }
+
+    cout<<str<<"\n";
+
 }
