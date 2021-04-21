@@ -1,4 +1,5 @@
-#include "dna.h"
+
+
 /*
 Write code for function get_gc_content that accepts
 a const reference string parameter and returns a double.
@@ -28,3 +29,34 @@ c. return string
 
 */
 
+#include "dna.h"
+#include <string>
+
+
+double get_gc_content(const string & dna)
+{
+    double gc_content = 0;
+        for (int i = 0; i < dna.size (); i++)
+        {
+            if ( dna[i] == "G" || dna[i] == "C" )
+            {
+                gc_content++;
+
+            }
+        }
+    double percentage = gc_content / dna.size();
+    return percentage;
+
+}
+
+
+
+string get_reverse_string(string dna)
+{
+    string reverse_dna;
+    for (size_t i = dna.size() -1; i >=0; --1)
+    {
+        reverse_dna.push_back(dna[i]);
+    } 
+    return reverse_dna;
+}
