@@ -2,6 +2,11 @@
 #include "catch.hpp"
 #include "value_ref.h"
 #include "for_ranged.h"
+#include "vec.h"
+
+using std::vector;
+using std::string;
+using std::cout;
 
 
 TEST_CASE("Verify Test Configuration", "verification") {
@@ -34,3 +39,40 @@ TEST_CASE("Test strings for ranged by reference param")
 	REQUIRE(name == "john");
 }
 
+
+TEST_CASE("Test strings for vector in function parameters")
+{
+	vector<int> nums{10, 4, 2}; //create and assignnums
+	vector<int> expected_values{10, 4, 2}; //create and assignnums
+
+
+	loop_string_w_for_range_val(nums);
+
+	REQUIRE(nums == expected_values);
+}
+
+TEST_CASE("Test for reference vector in function parameters")
+{
+	vector<int> nums{10, 4, 2}; //create and assignnums
+	vector<int> expected_values{10, 4, 2}; //create and assignnums
+
+
+	//loop_string_w_for_range_ref(nums);
+
+	loop_vector_w_for_ranged(nums)
+
+	REQUIRE(nums == expected_values);
+}
+
+
+TEST_CASE("vector for ranged reference parameter")
+{
+	vector<int> nums{10, 4, 2}; //create and assignnums
+	vector<int> expected_values{10, 4, 2}; //create and assignnums
+
+	loop_vector_w_for_ranged_ref(nums);
+
+	REQUIRE(nums == expected_values);
+
+
+}
