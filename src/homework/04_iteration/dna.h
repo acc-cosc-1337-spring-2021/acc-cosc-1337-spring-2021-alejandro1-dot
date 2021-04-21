@@ -1,7 +1,8 @@
-#include<string>
 #include<iostream>
 #include<string>
+#include<vector>
 
+using std::string;
 
 /*
 Write prototype for function get_gc_content that accepts
@@ -19,7 +20,6 @@ std::string get_reverse_string(std::string dna);
 Write prototype for function get_dna_complement that
 accepts a string and returns a string
 */
-
 
 std::string get_dna_complement(std::string dna);
 
