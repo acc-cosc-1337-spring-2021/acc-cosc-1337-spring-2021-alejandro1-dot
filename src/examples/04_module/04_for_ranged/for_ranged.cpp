@@ -43,6 +43,23 @@ t
 
 void  loop_string_w_for_range(std::string str)
 {
+    for(auto& s: str)       //a for loop thats index is dependent on the strings length. it is also a reference
+    {
+        cout<<s<"\n";
+
+        s = "z";
+    }
+
+    cout<<str<<"\n";
+
+    //str will print zzzz, 
+
+}
+
+
+//Using reference 
+void loop_string_w_for_range_ref(std::string& str)
+{
     for(auto s: str)
     {
         cout<<s<"\n";
@@ -52,4 +69,9 @@ void  loop_string_w_for_range(std::string str)
 
     cout<<str<<"\n";
 
+    //will not mofify str
+
 }
+
+
+
