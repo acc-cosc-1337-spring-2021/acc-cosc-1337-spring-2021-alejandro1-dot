@@ -25,7 +25,7 @@ TEST_CASE("Test to if Board can be marked by a player", "mark_board test") {
 	Tic_Tac_Toe game; 
 
 	//player input
-	std::string a = "G";
+	std::string a = "X";
 	game.start_game(a);
 	game.mark_board(3);
 }
@@ -86,3 +86,41 @@ TEST_CASE("Clear Board")
 	game.start_game(a);
 
 }
+
+
+TEST_CASE("Test case for row winner")
+{
+	Tic_Tac_Toe game; 
+
+	//player input
+	std::string a = "X";
+	game.start_game(a);
+
+	game.mark_board(1);
+	game.mark_board(3);
+	game.mark_board(3);
+	game.mark_board(2);
+	game.mark_board(2);
+
+	REQUIRE(game.game_over() == true);
+
+}
+
+TEST_CASE("Test case for column winner")
+{
+	Tic_Tac_Toe game; 
+
+	//player input
+	std::string a = "X";
+	game.start_game(a);
+
+	game.mark_board(0);
+	game.mark_board(3);
+	game.mark_board(3);
+	game.mark_board(6);
+	game.mark_board(6);
+
+	REQUIRE(game.game_over() == true);
+
+}
+
