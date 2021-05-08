@@ -11,7 +11,7 @@ void Tic_Tac_Toe :: start_game(string first_player)
 {
    
     player = first_player;
-    display_board();  
+    //display_board();  
 }
 
 
@@ -74,7 +74,7 @@ void Tic_Tac_Toe :: mark_board(int position)
 
             //Displays the board and moves to next player turn
             cout<<"\n";
-            display_board();
+            //display_board();
             set_player_next();
         } 
 
@@ -107,34 +107,6 @@ void Tic_Tac_Toe :: mark_board(int position)
 
         clear_board();
     }
-
-
-    
-	
-
-     // ----------------------------------------------
-    /*
-
-    //std::cout<<"\n"<<player<<"'s turn";
-    pegs[position - 1] = player;
-
-    cout<<"\n";
-    display_board();
-
-    //Game over screen and declare winner                   original mark_board code
-    if(game_over())
-    {
-        cout<<player<<" won"<<"\n";
-        clear_board();
-    }
-    else
-    {
-        set_player_next();
-    } 
-
-    */
-    
-    //-------------------------
 
 }
 

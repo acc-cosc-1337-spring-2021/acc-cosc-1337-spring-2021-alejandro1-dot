@@ -6,6 +6,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include <ostream>
 
 using std::string;
 using std::vector;
@@ -17,10 +18,15 @@ public:
     void start_game(string first_player);
     void mark_board(int position);
     string get_player()const{return player;}
-    void display_board()const; 
+    //void display_board()const; 
     
     //HW 7
     string get_winner()const{return winner;}
+
+    //HW 8
+    ostream& operator<<(std::ostream & out, const Tic_Tac_Toe_Manager &manager);
+    ostream& operator>>(std::istream int, Tic_Tac_Toe& game);
+    
 
 
 private:
@@ -36,6 +42,8 @@ private:
     bool check_diagonal_win();
     void set_winner(); 
     std::string winner; 
+
+
 
 
     
