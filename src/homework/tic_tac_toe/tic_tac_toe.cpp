@@ -11,10 +11,15 @@ void Tic_Tac_Toe :: start_game(string first_player)
 {
    
     player = first_player;
-    //display_board();  
+    
+    clear_board();
+    // HW 8 says to deleta display_board(); 
+    display_board();  
 }
 
 
+
+// HW 8 says to deleta display_board(); 
 
 //Board Display
 void Tic_Tac_Toe::display_board()const
@@ -49,7 +54,7 @@ void Tic_Tac_Toe::display_board()const
 void Tic_Tac_Toe :: mark_board(int position)
 {
 
-
+    /*
     while(!(game_over()))
         {
             
@@ -73,20 +78,28 @@ void Tic_Tac_Toe :: mark_board(int position)
 
 
             //Displays the board and moves to next player turn
+            display_board();
             cout<<"\n";
-            //display_board();
+            //Hw 8 deletes board
             set_player_next();
-        } 
+        }
+        */
+
+  
+    pegs[position - 1] = player;
 
 
-   
+    //Displays the board and moves to next player turn
+    display_board();
+    set_player_next();
     
-
+    
+    
     //New Code
     if(game_over())
     {
         cout<<"Game Over"<<"\n";
-        set_winner();
+        set_winner(); 
         
         //Wining by Row
         if(check_row_win())
@@ -103,9 +116,7 @@ void Tic_Tac_Toe :: mark_board(int position)
         {
             cout<<get_winner()<< " wins";
         }
-    // End of HW 7
-
-        clear_board();
+        // End of HW 7
     }
 
 }
